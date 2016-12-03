@@ -9,9 +9,20 @@
     android:gravity="center|center_vertical"
     tools:context="io.maincraft.sample.MainActivity">
 
-    <Button
-        android:id="@+id/show"
-        android:text="Show datepicker"
+
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/show"
+            android:text="Show datepicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
 </RelativeLayout>
