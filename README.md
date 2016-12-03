@@ -33,3 +33,41 @@
             }
         });
 ```
+
+### How to change locale:
+You just need to override strings:
+```xml
+    <string name="kissDatePicker_Day">Day</string>
+    <string name="kissDatePicker_Month">Month</string>
+    <string name="kissDatePicker_Year">Year</string>
+    ```
+
+### How to change style:
+You just need to override styles:
+```xml
+    <style name="kissDatePicker" parent="AppTheme">
+    </style>
+    <style name="kissDatePicker.ViewPager" parent="kissDatePicker">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">250dp</item>>
+    </style>
+    <style name="kissDatePicker.Title" parent="kissDatePicker">
+        <item name="android:textSize">30dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="kissDatePicker.TextView" parent="kissDatePicker">
+        <item name="android:textSize">25dp</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="kissDatePicker.TextViewDigit" parent="kissDatePicker.TextView">
+        <item name="android:textSize">30sp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="kissDatePicker.TextViewDigitInactive" parent="kissDatePicker.TextViewDigit">
+        <item name="android:color">#d7d7d7</item>
+    </style>
+    ```
+    
