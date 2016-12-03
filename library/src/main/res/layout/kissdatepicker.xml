@@ -6,6 +6,7 @@
     android:layout_height="match_parent">
 
     <LinearLayout
+        android:background="#FFF"
         android:orientation="horizontal"
         android:padding="5dp"
         android:layout_gravity="center"
@@ -88,9 +89,9 @@
     </LinearLayout>
 
     <android.support.v4.view.ViewPager
-        android:id="@+id/kissDatePicker"
-        android:layout_width="match_parent"
-        android:layout_height="300dp">
+        style="@style/kissDatePicker.ViewPager"
+        android:id="@+id/kissDatePicker">
+
     </android.support.v4.view.ViewPager>
 
 

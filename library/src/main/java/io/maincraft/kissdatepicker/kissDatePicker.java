@@ -8,7 +8,6 @@ import android.text.TextWatcher;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -226,13 +225,13 @@ public class kissDatePicker {
         public Object instantiateItem(ViewGroup container, final int position) {
 
             final View view;
-            ImageView digitInputRemove;
+            RelativeLayout digitInputRemove;
 
 
             switch (position) {
                 default:
                     view = context.getLayoutInflater().inflate(R.layout.kissdatepicker_digits, container, false);
-                    ((TextView) view.findViewById(R.id.kissDatePicker_title)).setText("ГОД");
+                   //((TextView) view.findViewById(R.id.kissDatePicker_title)).setText("ГОД");
 
                     for (int i = 0; i <= 9; i++) {
                         RelativeLayout digitInput = ((RelativeLayout) view.findViewWithTag(TAG_DIGIT + String.valueOf(i)));
@@ -247,7 +246,7 @@ public class kissDatePicker {
 
                     }
 
-                    digitInputRemove = ((ImageView) view.findViewWithTag(TAG_DIGIT + "remove"));
+                    digitInputRemove = ((RelativeLayout) view.findViewWithTag(TAG_DIGIT + "remove"));
                     digitInputRemove.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {
@@ -264,7 +263,7 @@ public class kissDatePicker {
 
 
                     view = context.getLayoutInflater().inflate(R.layout.kissdatepicker_months, container, false);
-                    ((TextView) view.findViewById(R.id.kissDatePicker_title)).setText("МЕСЯЦ");
+                    //((TextView) view.findViewById(R.id.kissDatePicker_title)).setText("МЕСЯЦ");
 
                     Calendar cal = Calendar.getInstance();
                     SimpleDateFormat month_date = new SimpleDateFormat("MMM");
@@ -292,7 +291,7 @@ public class kissDatePicker {
                     break;
                 case 2:
                     view = context.getLayoutInflater().inflate(R.layout.kissdatepicker_digits, container, false);
-                    ((TextView) view.findViewById(R.id.kissDatePicker_title)).setText("ДЕНЬ");
+                    //((TextView) view.findViewById(R.id.kissDatePicker_title)).setText("ДЕНЬ");
 
 
                     for (int i = 0; i <= 9; i++) {
@@ -309,7 +308,7 @@ public class kissDatePicker {
 
                     }
 
-                    digitInputRemove = ((ImageView) view.findViewWithTag(TAG_DIGIT + "remove"));
+                    digitInputRemove = ((RelativeLayout) view.findViewWithTag(TAG_DIGIT + "remove"));
                     digitInputRemove.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View viewObject) {
