@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:layout_gravity="center"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:focusable="true"
+                android:clickable="true"
+                android:focusableInTouchMode="true"
+                android:windowSoftInputMode="stateAlwaysHidden"
+                android:gravity="center"
+                android:id="@+id/kissDatePicker_Year"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Год"
+                app:met_baseColor="@android:color/black"
+                app:met_floatingLabel="highlight"
+                app:met_maxCharacters="4"
+                app:met_primaryColor="?colorAccent"
+                app:met_singleLineEllipsis="true" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:windowSoftInputMode="stateAlwaysHidden"
+                android:gravity="center"
+                android:id="@+id/kissDatePicker_Month"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Месяц"
+
+                app:met_baseColor="@android:color/black"
+                app:met_floatingLabel="highlight"
+                app:met_maxCharacters="3"
+                app:met_primaryColor="?colorAccent"
+                app:met_singleLineEllipsis="true" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:windowSoftInputMode="stateAlwaysHidden"
+                android:gravity="center"
+                android:id="@+id/kissDatePicker_Day"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="День"
+                app:met_baseColor="@android:color/black"
+                app:met_floatingLabel="highlight"
+                app:met_maxCharacters="2"
+                app:met_primaryColor="?colorAccent"
+                app:met_singleLineEllipsis="true" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/kissDatePicker"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+    </android.support.v4.view.ViewPager>
+
+
+
+</LinearLayout>

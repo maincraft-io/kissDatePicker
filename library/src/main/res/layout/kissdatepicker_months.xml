@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    style="@style/kissDatePicker"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:padding="5dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/kissDatePicker_title"
+            android:text="--"
+            android:textSize="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <View
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+
+    <LinearLayout
+
+
+        android:layout_gravity="center|center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_gravity="center|center_vertical"
+            android:gravity="center|center_vertical"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/kissDatePicker.TextView"
+                android:tag="kissDatePicker_month_1"
+                tools:text="ЯНВ"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                style="@style/kissDatePicker.TextView"
+                android:tag="kissDatePicker_month_4"
+                tools:text="АПР"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                style="@style/kissDatePicker.TextView"
+                android:tag="kissDatePicker_month_7"
+                tools:text="ИЮЛ"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                style="@style/kissDatePicker.TextView"
+                android:tag="kissDatePicker_month_10"
+                tools:text="ОКТ"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_gravity="center|center_vertical"
+            android:gravity="center|center_vertical"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/kissDatePicker.TextView"
+                android:tag="kissDatePicker_month_2"
+                tools:text="ФЕВ"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                style="@style/kissDatePicker.TextView"
+                android:tag="kissDatePicker_month_5"
+                tools:text="МАЙ"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                style="@style/kissDatePicker.TextView"
+                android:tag="kissDatePicker_month_8"
+                tools:text="АВГ"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                style="@style/kissDatePicker.TextView"
+                android:tag="kissDatePicker_month_11"
+                tools:text="НОЯ"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="0"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <LinearLayout
+
+            android:layout_gravity="center|center_vertical"
+            android:gravity="center|center_vertical"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                style="@style/kissDatePicker.TextView"
+                android:tag="kissDatePicker_month_3"
+                tools:text="МАР"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                style="@style/kissDatePicker.TextView"
+                android:tag="kissDatePicker_month_6"
+                tools:text="ИЮН"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                style="@style/kissDatePicker.TextView"
+                android:tag="kissDatePicker_month_9"
+                tools:text="СЕН"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                style="@style/kissDatePicker.TextView"
+                android:tag="kissDatePicker_month_12"
+                tools:text="ДЕК"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
