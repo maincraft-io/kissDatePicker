@@ -40,7 +40,7 @@ You just need to override strings:
     <string name="kissDatePicker_Day">Day</string>
     <string name="kissDatePicker_Month">Month</string>
     <string name="kissDatePicker_Year">Year</string>
-    ```
+```
 
 ### How to change style:
 You just need to override styles:
@@ -69,5 +69,5 @@ You just need to override styles:
     <style name="kissDatePicker.TextViewDigitInactive" parent="kissDatePicker.TextViewDigit">
         <item name="android:color">#d7d7d7</item>
     </style>
-    ```
+```
     
