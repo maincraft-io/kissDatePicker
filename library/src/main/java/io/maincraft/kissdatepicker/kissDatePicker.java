@@ -301,9 +301,12 @@ public class kissDatePicker {
                         @Override
                         public void onClick(View objectView) {
                             String text = ((TextView) objectView.findViewWithTag("value")).getText().toString();
-                            YearInput.append(text);
-                            DayInput.setText("");
-                            selectedDay = 0;
+
+                            if(YearInput.getText().toString().length() < 4) {
+                                YearInput.append(text);
+                                DayInput.setText("");
+                                selectedDay = 0;
+                            }
                         }
                     });
 

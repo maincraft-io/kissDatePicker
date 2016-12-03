@@ -1,7 +1,6 @@
 package io.maincraft.sample;
 
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
@@ -15,9 +14,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        final FragmentActivity myContext = this;
-
-        final kissDatePicker datePicker = new kissDatePicker(myContext);
+        final kissDatePicker datePicker = new kissDatePicker(this);
         findViewById(R.id.show).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
