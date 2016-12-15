@@ -10,22 +10,38 @@
 
     <style name="kissDatePicker" parent="AppTheme">
     </style>
-    <style name="kissDatePicker.ViewPager" parent="kissDatePicker">
+    <style name="kissDatePicker.MainLayout" parent="kissDatePicker">
+        <item name="android:gravity">center|center_horizontal</item>
+        <item name="android:layout_gravity">center|center_horizontal</item>
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">250dp</item>>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <style name="kissDatePicker.Input" parent="kissDatePicker">
+        <item name="android:textSize">30sp</item>
+    </style>
+    <style name="kissDatePicker.ViewPager" parent="kissDatePicker">
+        <item name="android:gravity">top</item>
+        <item name="android:layout_gravity">top</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">270dp</item>>
     </style>
     <style name="kissDatePicker.Title" parent="kissDatePicker">
         <item name="android:textSize">30dp</item>
         <item name="android:textStyle">bold</item>
     </style>
+    <style name="kissDatePicker.Layout" parent="kissDatePicker">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">70dp</item>
+    </style>
     <style name="kissDatePicker.TextView" parent="kissDatePicker">
-        <item name="android:textSize">25dp</item>
-        <item name="android:layout_margin">10dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textSize">30sp</item>
         <item name="android:textAllCaps">true</item>
         <item name="android:textStyle">bold</item>
     </style>
     <style name="kissDatePicker.TextViewDigit" parent="kissDatePicker.TextView">
-        <item name="android:textSize">30sp</item>
+        <item name="android:textSize">40sp</item>
         <item name="android:layout_gravity">center</item>
         <item name="android:textStyle">bold</item>
     </style>
